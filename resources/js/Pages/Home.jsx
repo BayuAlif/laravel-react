@@ -12,7 +12,7 @@ export default function Home(props) {
 
             {/* cara memanggil title web dan desc dari console log sebelumnya */}
             <Head title={props.title} />
-            <Navbar />
+            <Navbar user={props.auth.user}/>
             {/* <h1>{props.description}</h1> */}
             <div>
                 {/* {props.news ? props.news.map((data, i)=> {
